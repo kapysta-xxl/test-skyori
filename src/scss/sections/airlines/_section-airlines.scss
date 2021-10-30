@@ -1,0 +1,19 @@
+@import 'blocks/logo';
+@import 'blocks/airlines';
+@import 'blocks/sidebar-filter';
+@import 'blocks/filter-form';
+@import 'blocks/tickets';
+@import 'blocks/button';
+@import 'blocks/tickets-tabs';
+@import 'blocks/tickets-list';
+@import 'blocks/ticket';
+@import 'blocks/ticket-header';
+@import 'blocks/ticket-body';
+@import 'blocks/ticket-item';
+
+.section-airlines{
+    width: 100%;
+    min-height: 100vh;
+    background: $bg-airlines;
+    padding: 50px 0;
+}

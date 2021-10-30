@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="public/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- start section airlines -->
+    <section class="section-airlines">
+        <div class="logo logo--tall">
+            <img class="logo__img" src="src/images/logo.png" alt="Логотип">
+        </div>
+        <div class="container">
+            <div class="airlines">
+                <!-- сайдбар фильтр -->
+                <div class="sidebar-filter">
+                    <div class="sidebar-filter__title">Количество пересадок</div>
+                    <div class="filter-form filter-form--height">
+                        <div class="filter-form__item">
+                            <input class="filter-form__input" id="transfer-all" type="checkbox" data-transfer="all">
+                            <label class="filter-form__label" for="transfer-all">Все</label>
+                        </div>
+                        <div class="filter-form__item">
+                            <input class="filter-form__input" id="transfer-no" type="checkbox" data-transfer="0">
+                            <label class="filter-form__label" for="transfer-no">Без пересадок</label>
+                        </div>
+                        <div class="filter-form__item">
+                            <input class="filter-form__input" id="transfer-one" type="checkbox" data-transfer="1">
+                            <label class="filter-form__label" for="transfer-one">1 Пересадка</label>
+                        </div>
+                        <div class="filter-form__item">
+                            <input class="filter-form__input" id="transfer-two" type="checkbox" data-transfer="2">
+                            <label class="filter-form__label" for="transfer-two">2 Пересадки</label>
+                        </div>
+                        <div class="filter-form__item">
+                            <input class="filter-form__input" id="transfer-three" type="checkbox" data-transfer="3">
+                            <label class="filter-form__label" for="transfer-three">3 Пересадки</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- правый блок с билетами -->
+                <div class="tickets">
+                    <div class="tickets-tabs">
+                        <button class="button tickets-tabs__btn" id="cheap">Cамый дешевый</button>
+                        <button class="button tickets-tabs__btn" id="fast">Cамый быстрый</button>
+                    </div>
+                    <ul class="tickets-list">
+                        <!-- сюда выгружаются билеты из Js-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section airlines -->
+    <script src="public/index.bundle.js"></script>
+</body>
+</html>

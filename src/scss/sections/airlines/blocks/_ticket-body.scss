@@ -1,0 +1,11 @@
+.ticket-body{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @media only screen and (max-width: $screen-md){
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

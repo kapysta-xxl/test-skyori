@@ -1,0 +1,29 @@
+.ticket-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+
+    &__price{
+        font-size: 24px;
+        font-family: $o-semibold;
+        color: $accent;
+
+        @media only screen and (max-width: $screen-md){
+            font-size: 18px;
+        }
+    }
+
+    &__img{
+        width: 110px;
+        height: 36px;
+        object-fit: scale-down;
+
+        @media only screen and (max-width: $screen-md){
+            width: 80px;
+            height: 28px;
+        }
+    }
+
+    
+}

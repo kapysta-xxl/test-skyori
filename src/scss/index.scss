@@ -1,0 +1,10 @@
+@import 'reset';
+@import 'variables';
+@import 'fonts';
+
+@import './sections/airlines/section-airlines';
+
+.container{
+    max-width: $container-width;
+    margin: 0 auto;
+}

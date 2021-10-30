@@ -1,0 +1,10 @@
+.airlines{
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: $screen-md){
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

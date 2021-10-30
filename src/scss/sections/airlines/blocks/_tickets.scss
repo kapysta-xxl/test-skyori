@@ -1,0 +1,11 @@
+.tickets{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+
+    @media only screen and (max-width: $screen-md){
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+}

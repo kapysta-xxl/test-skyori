@@ -1,0 +1,59 @@
+.filter-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__item{
+        display: flex;
+        align-items: center;
+        margin-left: -$filter-gutter;
+        margin-right: -$filter-gutter;
+        padding-left: $filter-gutter;
+        padding-right: $filter-gutter;
+        
+        &:hover{
+            background: $label-hover;
+        }
+    }
+
+    &__label{
+        display: flex;
+        align-items: center;
+        height: 40px;
+        width: 100%;
+        color: $b-text;
+        font-family: $o-regular;
+        font-size: 13px;
+        cursor: pointer;
+        padding-left: 28px;
+        position: relative;
+
+        &:before{
+            content: '';
+            display: flex;
+            width: 20px;
+            height: 20px;
+            border: 1px solid $gray;
+            background: #fff;
+            border-radius: 2px;
+            position: absolute;
+            left: 0;
+        }
+    }
+
+    &__input{
+        width: 20px;
+        height: 20px;
+        visibility: hidden;
+        position: absolute;
+
+        &:checked + label:before{
+            background: url(/src/images/Shape.svg) no-repeat center;
+            border: 1px solid $accent;
+        }
+    }
+}
+
+.filter-form--height{
+    height: 100%;
+}

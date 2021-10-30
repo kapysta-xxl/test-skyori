@@ -1,0 +1,65 @@
+.ticket-item{
+    display: flex;
+    justify-content: space-around;
+
+    @media only screen and (max-width: $screen-md){
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    &:not(:last-child){
+        margin-bottom: 10px;
+
+        @media only screen and (max-width: $screen-md){
+            margin-bottom: 0;
+        }
+    }
+
+    &__elem{
+        font-weight: 600;
+        line-height: 21px;
+        width: 140px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        @media only screen and (max-width: $screen-md){
+            width: auto;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__elem:not(:last-child){
+        margin-right: 20px;
+
+        @media only screen and (max-width: $screen-md){
+            margin-right: 0;
+        }
+    }
+
+    &__title{
+        font-size: 12px;
+        font-family: $o-semibold;
+        text-transform: uppercase;
+
+        @media only screen and (max-width: $screen-md){
+            font-size: 10px;
+        }
+        
+        &--gray{
+            color: $gray;
+        }
+    }
+
+    &__subtitle{
+        font-size: 14px;
+        font-family: $o-semibold;
+        color: $b-text;
+
+        @media only screen and (max-width: $screen-md){
+            font-size: 12px;
+        }
+    }
+    
+}
