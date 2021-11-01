@@ -49,7 +49,7 @@ export class Tickets{
     }
 
     static filterTickets(e){
-        if(e.target.classList.contains('tickets-tabs__btn--active')){
+        if(!e.target.classList.contains('tickets-tabs__btn--active')){
             Tickets.removeActiveTabsBtns()
             e.target.classList.add('tickets-tabs__btn--active')
         }
